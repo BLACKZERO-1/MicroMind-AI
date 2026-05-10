@@ -1,0 +1,10 @@
+streamlit
+anthropic
+plotly
+matplotlib
+pandas
+numpy
+biopython
+requests
+pillow
+python-dotenv
