@@ -3,6 +3,7 @@ from utils.helpers import set_page_config, apply_custom_css
 from modules.chat import show_chat_module
 from modules.identifier import show_identifier_module
 from modules.test_explainer import show_test_explainer_module
+from modules.panel_simulator import show_panel_simulator_module
 
 # Page config - must be first streamlit command
 set_page_config()
@@ -29,6 +30,7 @@ with st.sidebar:
             "🧬 Ask Anything Chat",
             "🦠 Organism Identifier",
             "🧪 Lab Test Explainer",
+            "⚗️ Biochemical Panel Simulator",
             "💊 AMR Tracker (Coming Soon)",
             "🔬 PCR Guide (Coming Soon)",
             "🧫 Culture Media Guide (Coming Soon)",
@@ -72,6 +74,8 @@ elif "Organism Identifier" in selected_module:
     show_identifier_module()
 elif "Lab Test Explainer" in selected_module:
     show_test_explainer_module()
+elif "Biochemical Panel Simulator" in selected_module:
+    show_panel_simulator_module()
 else:
     st.markdown("""
         <div style="
@@ -81,8 +85,11 @@ else:
         ">
             <h2 style="color: #25B89A;">🚧 Coming Soon</h2>
             <p>This module is currently under development.</p>
-            <p>Use the <strong style="color: #25B89A;">Ask Anything Chat</strong>, 
-            <strong style="color: #25B89A;">Organism Identifier</strong>, or 
-            <strong style="color: #25B89A;">Lab Test Explainer</strong> while we build the rest.</p>
+            <p>Available modules:
+            <strong style="color: #25B89A;">Ask Anything Chat</strong>,
+            <strong style="color: #25B89A;">Organism Identifier</strong>,
+            <strong style="color: #25B89A;">Lab Test Explainer</strong>,
+            <strong style="color: #25B89A;">Biochemical Panel Simulator</strong>
+            </p>
         </div>
     """, unsafe_allow_html=True)
