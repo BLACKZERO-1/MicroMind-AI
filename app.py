@@ -4,6 +4,7 @@ from modules.chat import show_chat_module
 from modules.identifier import show_identifier_module
 from modules.test_explainer import show_test_explainer_module
 from modules.panel_simulator import show_panel_simulator_module
+from modules.amr_tracker import show_amr_tracker_module
 
 # Page config - must be first streamlit command
 set_page_config()
@@ -31,7 +32,7 @@ with st.sidebar:
             "🦠 Organism Identifier",
             "🧪 Lab Test Explainer",
             "⚗️ Biochemical Panel Simulator",
-            "💊 AMR Tracker (Coming Soon)",
+            "💊 AMR Tracker",
             "🔬 PCR Guide (Coming Soon)",
             "🧫 Culture Media Guide (Coming Soon)",
             "📖 Pathogen Library (Coming Soon)",
@@ -76,6 +77,8 @@ elif "Lab Test Explainer" in selected_module:
     show_test_explainer_module()
 elif "Biochemical Panel Simulator" in selected_module:
     show_panel_simulator_module()
+elif "AMR Tracker" in selected_module:
+    show_amr_tracker_module()
 else:
     st.markdown("""
         <div style="
@@ -89,7 +92,8 @@ else:
             <strong style="color: #25B89A;">Ask Anything Chat</strong>,
             <strong style="color: #25B89A;">Organism Identifier</strong>,
             <strong style="color: #25B89A;">Lab Test Explainer</strong>,
-            <strong style="color: #25B89A;">Biochemical Panel Simulator</strong>
+            <strong style="color: #25B89A;">Biochemical Panel Simulator</strong>,
+            <strong style="color: #25B89A;">AMR Tracker</strong>
             </p>
         </div>
     """, unsafe_allow_html=True)
