@@ -9,6 +9,7 @@ from modules.pcr_guide import show_pcr_guide_module
 from modules.media_guide import show_media_guide_module
 from modules.pathogen_library import show_pathogen_library_module
 from modules.infection_control import show_infection_control_module
+from modules.dashboard import show_dashboard_module
 
 # Page config - must be first streamlit command
 set_page_config()
@@ -41,7 +42,7 @@ with st.sidebar:
             "🧫 Culture Media Guide",
             "📖 Pathogen Library",
             "🏥 Infection Control",
-            "📊 Learning Dashboard (Coming Soon)",
+            "📊 Learning Dashboard",
         ],
         label_visibility="collapsed"
     )
@@ -91,15 +92,5 @@ elif "Pathogen Library" in selected_module:
     show_pathogen_library_module()
 elif "Infection Control" in selected_module:
     show_infection_control_module()
-else:
-    st.markdown("""
-        <div style="
-            text-align: center;
-            padding: 80px 20px;
-            color: #B0C4CE;
-        ">
-            <h2 style="color: #25B89A;">🚧 Coming Soon</h2>
-            <p>This module is currently under development.</p>
-            <p>All other modules are available in the sidebar.</p>
-        </div>
-    """, unsafe_allow_html=True)
+elif "Learning Dashboard" in selected_module:
+    show_dashboard_module()
