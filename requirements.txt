@@ -8,3 +8,4 @@ biopython
 requests
 pillow
 python-dotenv
+groq
