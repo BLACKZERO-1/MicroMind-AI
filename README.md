@@ -5,6 +5,15 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.0+-red)
 ![AI Powered](https://img.shields.io/badge/AI-Powered-green)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
+[![Live App](https://img.shields.io/badge/Live%20App-micromind--ai.streamlit.app-25B89A)](https://micromind-ai.streamlit.app)
+
+---
+
+## 🌐 Live App
+
+**👉 [micromind-ai.streamlit.app](https://micromind-ai.streamlit.app)**
+
+No installation needed. Open the link and start using it instantly from any device.
 
 ---
 
@@ -35,11 +44,16 @@ It combines domain expertise with modern AI to provide instant, accurate, and pr
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### Option 1 — Use the Live App
+Visit **[micromind-ai.streamlit.app](https://micromind-ai.streamlit.app)** directly. No setup needed.
+
+### Option 2 — Run Locally
+
+**Prerequisites**
 - Python 3.11+
 - Groq API key (free at console.groq.com)
 
-### Installation
+**Installation**
 
 ```bash
 # Clone the repository
@@ -64,6 +78,7 @@ streamlit run app.py
 - **AI Engine** — Groq API (Llama 3.3 70B)
 - **Language** — Python 3.11+
 - **Libraries** — Plotly, Pandas, NumPy, BioPython
+- **Hosting** — Streamlit Community Cloud
 
 ---
 
@@ -76,6 +91,10 @@ streamlit run app.py
 - Aspiring MS Student — University of Göttingen (Molecular Life Sciences)
 
 This project was built to solve real problems I encountered during my time in microbiology labs — combining domain expertise with modern AI tools.
+
+📧 badarislam4805@gmail.com
+🔗 [LinkedIn](https://www.linkedin.com/in/badar-islam8054805)
+🐙 [GitHub](https://github.com/BLACKZERO-1)
 
 ---
 
@@ -96,8 +115,8 @@ MIT License — free to use, modify, and distribute.
 
 ## ⚠️ Disclaimer
 
-MicroMind AI is for educational and reference purposes only. 
-Always confirm findings through standard laboratory procedures 
+MicroMind AI is for educational and reference purposes only.
+Always confirm findings through standard laboratory procedures
 and consult qualified professionals for clinical decisions.
 
 ---
