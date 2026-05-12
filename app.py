@@ -8,6 +8,7 @@ from modules.amr_tracker import show_amr_tracker_module
 from modules.pcr_guide import show_pcr_guide_module
 from modules.media_guide import show_media_guide_module
 from modules.pathogen_library import show_pathogen_library_module
+from modules.infection_control import show_infection_control_module
 
 # Page config - must be first streamlit command
 set_page_config()
@@ -39,7 +40,7 @@ with st.sidebar:
             "🔬 PCR Guide",
             "🧫 Culture Media Guide",
             "📖 Pathogen Library",
-            "🏥 Infection Control (Coming Soon)",
+            "🏥 Infection Control",
             "📊 Learning Dashboard (Coming Soon)",
         ],
         label_visibility="collapsed"
@@ -88,6 +89,8 @@ elif "Culture Media Guide" in selected_module:
     show_media_guide_module()
 elif "Pathogen Library" in selected_module:
     show_pathogen_library_module()
+elif "Infection Control" in selected_module:
+    show_infection_control_module()
 else:
     st.markdown("""
         <div style="
@@ -97,15 +100,6 @@ else:
         ">
             <h2 style="color: #25B89A;">🚧 Coming Soon</h2>
             <p>This module is currently under development.</p>
-            <p>Available modules:
-            <strong style="color: #25B89A;">Ask Anything Chat</strong>,
-            <strong style="color: #25B89A;">Organism Identifier</strong>,
-            <strong style="color: #25B89A;">Lab Test Explainer</strong>,
-            <strong style="color: #25B89A;">Biochemical Panel Simulator</strong>,
-            <strong style="color: #25B89A;">AMR Tracker</strong>,
-            <strong style="color: #25B89A;">PCR Guide</strong>,
-            <strong style="color: #25B89A;">Culture Media Guide</strong>,
-            <strong style="color: #25B89A;">Pathogen Library</strong>
-            </p>
+            <p>All other modules are available in the sidebar.</p>
         </div>
     """, unsafe_allow_html=True)
